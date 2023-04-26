@@ -24,7 +24,7 @@ const generateRunReq = ({
   stuNumber: string;
   phoneNumber: string;
 }) => {
-  const waitSecond = Math.floor(normalRandom(450, 40));
+  const waitSecond = Math.floor(normalRandom(Number(distance) * 360, 60 * Number(distance)));
   const startTime = new Date();
   const endTime = new Date(Number(startTime) + waitSecond * 1000);
   const distanceNum = Number(distance);
@@ -52,7 +52,7 @@ const generateRunReq = ({
     schoolId,
     sensorString: '',
     startTime: format(startTime, 'HH:mm:ss'),
-    steps: `${1000 + Math.floor(Math.random() * 1000)}`,
+    steps: `${Math.floor(Number(distance) * 2000) + Math.floor(Math.random() * 1000 * Number(distance))}`,
     stuNumber,
     submitDate: format(endTime, 'yyyy-MM-dd'),
     taskId,
