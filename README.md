@@ -7,20 +7,20 @@ The name is netaed from `nekopara`.
 ## 🏗️ How to build
 
 ```bash
-pnpm i
-pnpm build
+npm install
+npm run build
 ```
 
 ## 🚀 How to run
 
 ```bash
-pnpm start
+npm start
 ```
 
 ## ⚛️ How to develop
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 ## 📝 License
