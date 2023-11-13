@@ -65,7 +65,7 @@ const generateRunReq = ({
     schoolId,
     sensorString: '',
     startTime: format(startTime, 'HH:mm:ss'),
-    steps: `${1000 + Math.floor(Math.random() * 1000)}`,
+    steps: `${1000 + Math.floor(Math.random() * 1000 * distance)}`,
     stuNumber,
     submitDate: format(endTime, 'yyyy-MM-dd'),
     taskId,
